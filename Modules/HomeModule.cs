@@ -10,6 +10,15 @@ namespace Palindrome
     public HomeModule()
     {
       Get["/"] = _ => View["index.cshtml"];
+      Post["/palindrome_result"] = _ => {
+        Word newWord = new Word ();
+        string IsIt="";
+        if(!newWord.IsPalindrome(Request.Form["word-input"]))
+        {
+          IsIt="not ";
+        }
+        return View["index.cshtml", "Your word is "+IsIt+"a palindrome"];
+      };
     }
   }
 }
