@@ -10,7 +10,8 @@ namespace Palindrome.Objects
     public bool IsPalindrome(string potentialPalindrome)
     {
       bool matches = true;
-      char[] letters = potentialPalindrome.ToLower().ToCharArray();
+      string despacedInput = potentialPalindrome.Replace(" ","");
+      char[] letters = despacedInput.ToLower().ToCharArray();
       for (int i=0; i<letters.Length; i++)
       {
         if (letters[i]!=letters[letters.Length-(1+i)])
