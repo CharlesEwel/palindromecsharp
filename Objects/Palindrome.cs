@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Palindrome.Objects
 {
-  public class Word
+  public class Input
   {
     public bool IsPalindrome(string potentialPalindrome)
     {

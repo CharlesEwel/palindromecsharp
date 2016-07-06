@@ -23,7 +23,7 @@ No known bugs.
 
 The program should ... | Example Input | Example Output
 ----- | ----- | -----
-Message will display telling user if the word they entered is a palindrome or not | word: "radar" | "Your word is a palindrome"
+Message will display telling user if the word/number they entered is a palindrome or not | word: "radar" | "Your word/number is a palindrome"
 
 ## Future Features
 

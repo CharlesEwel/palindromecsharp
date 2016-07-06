@@ -11,13 +11,13 @@ namespace Palindrome
     {
       Get["/"] = _ => View["index.cshtml"];
       Post["/palindrome_result"] = _ => {
-        Word newWord = new Word ();
+        Input newInput = new Input ();
         string IsIt="";
-        if (!newWord.IsPalindrome(Request.Form["word-input"]))
+        if (!newInput.IsPalindrome(Request.Form["input"]))
         {
           IsIt="not ";
         }
-        return View["index.cshtml", "Your word is "+IsIt+"a palindrome"];
+        return View["index.cshtml", "Your word/number is "+IsIt+"a palindrome"];
       };
     }
   }

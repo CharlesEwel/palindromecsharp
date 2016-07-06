@@ -6,14 +6,14 @@ namespace Palindrome.Objects
     [Fact]
     public void IsPalindrome_NotPalindrome_False()
     {
-      Word newWord = new Word ();
-      Assert.Equal(false, newWord.IsPalindrome("charlie"));
+      Input newInput = new Input ();
+      Assert.Equal(false, newInput.IsPalindrome("charlie"));
     }
     [Fact]
     public void IsPalindrome_Palindrome_True()
     {
-      Word newWord = new Word ();
-      Assert.Equal(true, newWord.IsPalindrome("radar"));
+      Input newInput = new Input ();
+      Assert.Equal(true, newInput.IsPalindrome("radar"));
     }
   }
 }
