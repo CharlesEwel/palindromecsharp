@@ -11,9 +11,9 @@ namespace Palindrome.Objects
     {
       bool matches = true;
       char[] letters = potentialPalindrome.ToCharArray();
-      for(int i=0; i<letters.Length; i++)
+      for (int i=0; i<letters.Length; i++)
       {
-        if(letters[i]!=letters[letters.Length-(1+i)])
+        if (letters[i]!=letters[letters.Length-(1+i)])
         {
           matches=false;
         }

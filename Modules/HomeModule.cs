@@ -13,7 +13,7 @@ namespace Palindrome
       Post["/palindrome_result"] = _ => {
         Word newWord = new Word ();
         string IsIt="";
-        if(!newWord.IsPalindrome(Request.Form["word-input"]))
+        if (!newWord.IsPalindrome(Request.Form["word-input"]))
         {
           IsIt="not ";
         }
